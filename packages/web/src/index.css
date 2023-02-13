@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-2 py-2 lg:px-4 bg-blue-600 text-white rounded;
+  }
+  .navLinkActive {
+    @apply py-2 px-2 text-blue-500 border-b-2 border-blue-500 font-semibold capitalize;
+  }
+  .navLinkInactive {
+    @apply py-2 px-2 text-gray-200 font-semibold hover:text-blue-500 transition duration-300 capitalize;
+  }
+  .mobileMenuLinkActive {
+    @apply block text-sm px-2 py-4 text-white bg-blue-500 font-semibold capitalize;
+  }
+  .mobileMenuLinkInactive {
+    @apply block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 capitalize;
+  }
+}

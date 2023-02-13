@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  /* font-family: "Fira Code", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+/* 'Nunito' */
+/* "Fira Code" */
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  background: rgba(9, 2, 33, 1);
+  width: 0.3em;
+  height: 0.3em;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(57, 25, 219, 1);
+}
+::selection {
+  background: rgba(57, 25, 219, 1);
+  color: rgb(249, 250, 251);
+}
+.bg-gradient-btn {
+  background: linear-gradient(to right, white 90%, transparent 100%);
+}
+.bg-coincap {
+  background-color: #007bff;
+}
+.text-coincap {
+  color: #007bff;
+}
+
+.border-coincap {
+  border-color: #007bff;
+}
+
+header {
+  background: rgb(9, 2, 33);
+  background: linear-gradient(
+    120deg,
+    rgba(9, 2, 33, 1) 12%,
+    rgba(18, 6, 159, 1) 73%,
+    rgba(57, 25, 219, 1) 100%
+  );
+}
+.bg-dark {
+  background: rgb(9, 2, 33);
+}
+.bg-gradient {
+  background: linear-gradient(
+    120deg,
+    rgba(9, 2, 33, 1) 12%,
+    rgba(18, 6, 159, 1) 73%,
+    rgba(57, 25, 219, 1) 100%
+  );
+}
+/* .login {
+  background: url("./assets/images/login.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.dashboard {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media (min-width: 768px) {
+  .header {
+    height: 90vh;
+  }
+}
+/* .btn{
+  background: rgba(57,25,219,1) !important;
+} */
+
+footer {
+  background: rgb(9, 2, 33);
+  /* background: linear-gradient(120deg, rgba(9,2,33,1) 12%, rgba(18,6,159,1) 73%, rgba(57,25,219,1) 100%); */
+}
+
+/* .wrapper {
+  background: url('./assets/images/header.png');
+  border-radius: 30px;
+} */
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* background: url('./assets/images/header.png'); */
+  /* border-radius: 30px; */
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  /* backdrop-filter: blur( 3.5px ) */
+}
+
+.item {
+  width: inherit;
+  height: inherit;
+  background: white;
+  transform-origin: 50% 100%;
+}
+
+.bg-us {
+  background: rgb(37, 37, 37);
+}
+
+.section-title {
+  text-transform: capitalize;
+}
+.bg-paint {
+  background: #1c1c1c;
+}
+.hover:bg-paint :hover {
+  cursor: pointer;
+  background: #1c1c1c;
+}
