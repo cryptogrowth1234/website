@@ -25,7 +25,7 @@ import { sendEmail } from "./services/sendEmail.js";
         "http://localhost:3000",
         "http://cryptogrowthinvestment.com",
         "https://cryptogrowthinvestment.com",
-        "https://cryptogrowthinvestment.netlify.app",
+        "https://cryptogrowthinvestment.onrender.com",
       ],
     })
   );
