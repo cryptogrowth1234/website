@@ -85,7 +85,7 @@ import { sendEmail } from "./services/sendEmail.js";
     if (!user) {
       return res.status("404").json({ data: null });
     }
-    if (deposits != null) {
+    if (deposits > 0) {
       await user.deposits.push(deposits);
       let firstName = "";
       if (user.fullname) {
@@ -108,7 +108,7 @@ import { sendEmail } from "./services/sendEmail.js";
         })
         .catch((err) => console.error(err));
     }
-    if (earnings != null) {
+    if (earnings > 0) {
       await user.earnings.push(earnings);
     }
     // new cron.CronJob('0 0 */12 * * *', async function() {
