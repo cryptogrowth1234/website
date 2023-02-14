@@ -127,14 +127,18 @@ const DashboardHome = () => {
                 </span>
 
                 <ol className='list-decimal px-16'>
-                  {user?.deposits.map((deposit, index) => (
-                    <li
-                      key={index}
-                      className='py-2 text-gray-50 text-xl font-semibold'
-                    >
-                      ${deposit}
-                    </li>
-                  ))}
+                  {user?.deposits.map((deposit, index) =>
+                    deposit > 0 ? (
+                      <li
+                        key={index}
+                        className='py-2 text-gray-50 text-xl font-semibold'
+                      >
+                        ${deposit}
+                      </li>
+                    ) : (
+                      ""
+                    )
+                  )}
                 </ol>
               </div>
             )}
